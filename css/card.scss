@@ -1,0 +1,56 @@
+@import 'nav.scss';
+body {
+    background-color:lightgrey;
+}
+.container {
+    margin: 1em;
+    display: flex;
+    justify-content:center;
+}
+.card {
+    display: grid;
+    grid-template-rows: repeat (5, auto);
+    grid-template-areas: 
+    "image"
+    "title"
+    "text"
+    "date"
+    "info";
+    background-color: white;
+    max-width: 650px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img {
+    grid-area: image;
+    width: 100%;
+}
+.title {
+    margin: 25px;
+    font-size: 25px;
+    grid-area: title;
+}
+.text {
+    font-size: 16px;
+    grid-area: text;
+    margin: 0 25px 25px;
+}
+.date {
+    font-size: 14px;
+    font-weight: 900;
+    grid-area: date;
+    margin: 0 25px;
+    justify-self: end;
+    span {
+        color: #61d461;
+    }
+}
+.info {
+    font-size: 16px;
+    font-weight: 900;
+    grid-area: info;
+    margin:25px;
+    background-color: #61d461;
+    border: none;
+    color: #fff;
+    padding: 10px;
+}

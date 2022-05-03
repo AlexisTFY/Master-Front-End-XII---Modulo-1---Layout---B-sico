@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    background-color: #147d81;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    @media screen and (max-width:640px) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    a {
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        &:hover {
+            background-color: darken(#147d81, 10%) ;
+        }
+    }
+}

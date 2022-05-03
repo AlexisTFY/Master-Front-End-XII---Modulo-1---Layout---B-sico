@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #147d81;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+nav a {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #0d5255;
+}
+
+/*# sourceMappingURL=ejercicio3.86948664.css.map */

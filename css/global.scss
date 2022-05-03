@@ -1,0 +1,96 @@
+@import 'nav.scss';
+$ColorBase1: #0dec50;
+$ColorBase2: #360dec;
+$ColorBase3: #ec0d3d;
+
+@mixin lightenColor($color, $number) {
+    background-color: lighten($color, $number * 10%) ;
+}
+@mixin darkenColor($color, $number) {
+    background-color: darken($color, $number * 10%) ;
+}
+@mixin lightenColorText($color, $number) {
+    color: lighten($color, $number * 10%) ;
+}
+@mixin darkenColortext($color, $number) {
+    color: darken($color, $number * 10%) ;
+}
+
+.container-1, .container-2, .container-3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    .box {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        border-radius: 4px;
+        margin: 2px;
+    }
+}
+
+.container-1{ 
+    .base-color {
+        background-color: $ColorBase1;
+        color: white;
+    }
+    @for $i from 1 through 4 {
+        .lighten-#{$i} {
+            @include lightenColor($ColorBase1, $i);
+            .color-box-text {
+                @include darkenColortext($ColorBase1, $i);
+            }
+        }
+        .darken-#{$i} {
+            @include darkenColor($ColorBase1, $i);
+            .color-box-text {
+                @include lightenColorText($ColorBase1, $i);
+            }
+        }
+    }
+}
+
+.container-2 {
+    .base-color {
+        background-color: $ColorBase2;
+        color: white;
+    }
+    @for $i from 1 through 4 {
+        .lighten-#{$i} {
+            @include lightenColor($ColorBase2, $i);
+            .color-box-text {
+                @include darkenColortext($ColorBase2, $i);
+            }
+        }
+        .darken-#{$i} {
+            @include darkenColor($ColorBase2, $i);
+            .color-box-text {
+                @include lightenColorText($ColorBase2, $i);
+            }
+        }
+    }
+}
+
+.container-3 {
+    .base-color {
+        background-color: $ColorBase3;
+        color: white;
+    }
+    @for $i from 1 through 4 {
+        .lighten-#{$i} {
+            @include lightenColor($ColorBase3, $i);
+            .color-box-text {
+                @include darkenColortext($ColorBase3, $i);
+            }
+        }
+        .darken-#{$i} {
+            @include darkenColor($ColorBase3, $i);
+            .color-box-text {
+                @include lightenColorText($ColorBase3, $i);
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+$color2: #0084ff;
+.theme {
+    .box {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+    }
+    .base {
+        background-color: $color2;
+    }
+    .important {
+        background-color: darken($color2, 30%) ;
+    }
+    .warning {
+        background-color: lighten($color2, 30%);
+    }
+    .pFont{
+        font-family:Arial, sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .sFont {
+        font-family:Arial, sans-serif;
+        font-size: 0.9em;
+        font-style: italic;
+        font-weight: 900;
+    }
+    .shadow {
+        border: 1px solid #ddd;
+        -webkit-box-shadow: 10px -10px 16px 2px #000000; 
+        box-shadow: 10px 10px 16px 2px #000000;
+    }
+}

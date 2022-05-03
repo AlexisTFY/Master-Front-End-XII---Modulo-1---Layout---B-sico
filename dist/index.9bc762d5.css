@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #147d81;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+nav a {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #0d5255;
+}
+
+.container-1, .container-2, .container-3 {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.container-1 .box, .container-2 .box, .container-3 .box {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  align-items: center;
+  margin: 2px;
+  padding: 8px;
+  display: flex;
+}
+
+.container-1 .base-color {
+  color: #fff;
+  background-color: #0dec50;
+}
+
+.container-1 .lighten-1 {
+  background-color: #38f470;
+}
+
+.container-1 .lighten-1 .color-box-text {
+  color: #0abc40;
+}
+
+.container-1 .darken-1 {
+  background-color: #0abc40;
+}
+
+.container-1 .darken-1 .color-box-text {
+  color: #38f470;
+}
+
+.container-1 .lighten-2 {
+  background-color: #68f793;
+}
+
+.container-1 .lighten-2 .color-box-text {
+  color: #088b2f;
+}
+
+.container-1 .darken-2 {
+  background-color: #088b2f;
+}
+
+.container-1 .darken-2 .color-box-text {
+  color: #68f793;
+}
+
+.container-1 .lighten-3 {
+  background-color: #99f9b6;
+}
+
+.container-1 .lighten-3 .color-box-text {
+  color: #055b1f;
+}
+
+.container-1 .darken-3 {
+  background-color: #055b1f;
+}
+
+.container-1 .darken-3 .color-box-text {
+  color: #99f9b6;
+}
+
+.container-1 .lighten-4 {
+  background-color: #c9fcd8;
+}
+
+.container-1 .lighten-4 .color-box-text {
+  color: #022b0e;
+}
+
+.container-1 .darken-4 {
+  background-color: #022b0e;
+}
+
+.container-1 .darken-4 .color-box-text {
+  color: #c9fcd8;
+}
+
+.container-2 .base-color {
+  color: #fff;
+  background-color: #360dec;
+}
+
+.container-2 .lighten-1 {
+  background-color: #5b38f4;
+}
+
+.container-2 .lighten-1 .color-box-text {
+  color: #2b0abc;
+}
+
+.container-2 .darken-1 {
+  background-color: #2b0abc;
+}
+
+.container-2 .darken-1 .color-box-text {
+  color: #5b38f4;
+}
+
+.container-2 .lighten-2 {
+  background-color: #8268f7;
+}
+
+.container-2 .lighten-2 .color-box-text {
+  color: #20088b;
+}
+
+.container-2 .darken-2 {
+  background-color: #20088b;
+}
+
+.container-2 .darken-2 .color-box-text {
+  color: #8268f7;
+}
+
+.container-2 .lighten-3 {
+  background-color: #aa99f9;
+}
+
+.container-2 .lighten-3 .color-box-text {
+  color: #15055b;
+}
+
+.container-2 .darken-3 {
+  background-color: #15055b;
+}
+
+.container-2 .darken-3 .color-box-text {
+  color: #aa99f9;
+}
+
+.container-2 .lighten-4 {
+  background-color: #d2c9fc;
+}
+
+.container-2 .lighten-4 .color-box-text {
+  color: #0a022b;
+}
+
+.container-2 .darken-4 {
+  background-color: #0a022b;
+}
+
+.container-2 .darken-4 .color-box-text {
+  color: #d2c9fc;
+}
+
+.container-3 .base-color {
+  color: #fff;
+  background-color: #ec0d3d;
+}
+
+.container-3 .lighten-1 {
+  background-color: #f43860;
+}
+
+.container-3 .lighten-1 .color-box-text {
+  color: #bc0a31;
+}
+
+.container-3 .darken-1 {
+  background-color: #bc0a31;
+}
+
+.container-3 .darken-1 .color-box-text {
+  color: #f43860;
+}
+
+.container-3 .lighten-2 {
+  background-color: #f76887;
+}
+
+.container-3 .lighten-2 .color-box-text {
+  color: #8b0824;
+}
+
+.container-3 .darken-2 {
+  background-color: #8b0824;
+}
+
+.container-3 .darken-2 .color-box-text {
+  color: #f76887;
+}
+
+.container-3 .lighten-3 {
+  background-color: #f999ad;
+}
+
+.container-3 .lighten-3 .color-box-text {
+  color: #5b0518;
+}
+
+.container-3 .darken-3 {
+  background-color: #5b0518;
+}
+
+.container-3 .darken-3 .color-box-text {
+  color: #f999ad;
+}
+
+.container-3 .lighten-4 {
+  background-color: #fcc9d4;
+}
+
+.container-3 .lighten-4 .color-box-text {
+  color: #2b020b;
+}
+
+.container-3 .darken-4 {
+  background-color: #2b020b;
+}
+
+.container-3 .darken-4 .color-box-text {
+  color: #fcc9d4;
+}
+
+/*# sourceMappingURL=index.9bc762d5.css.map */

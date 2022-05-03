@@ -1,0 +1,8 @@
+// @import url(color1.scss);
+@import url(color2.scss);
+@import 'nav.scss';
+.theme {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}

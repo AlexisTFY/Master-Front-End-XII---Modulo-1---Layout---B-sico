@@ -1,0 +1,77 @@
+.theme .box {
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.theme .base {
+  background-color: #0084ff;
+}
+
+.theme .important {
+  background-color: #003566;
+}
+
+.theme .warning {
+  background-color: #99ceff;
+}
+
+.theme .pFont {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.theme .sFont {
+  font-family: Arial, sans-serif;
+  font-size: .9em;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.theme .shadow {
+  -webkit-box-shadow: 10px -10px 16px 2px #000;
+  border: 1px solid #ddd;
+  box-shadow: 10px 10px 16px 2px #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #147d81;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+nav a {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #0d5255;
+}
+
+.theme {
+  flex-direction: column;
+  padding: 2em;
+  display: flex;
+}
+
+/*# sourceMappingURL=ejercicio2.7388f1a7.css.map */
